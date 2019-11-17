@@ -122,7 +122,7 @@ public class AddressBookServiceTest {
 		assertNotEquals(ab, ab2);	//True if it modify the data
 
 
-		// IDEMPOTENT (two consecutive calls returns the same)
+		// NOT IDEMPOTENT (two consecutive calls returns the same)
 
 		//AddressBook with new ab data
 		ab2 = new AddressBook(ab);
